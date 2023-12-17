@@ -1,0 +1,13 @@
+// it says that to be able to override variable defaults, functions must be imported first before anything else :)
+@import 'node_modules/bootstrap/scss/_functions';
+
+// my own var
+$cambridge-blue: hsla(143, 30%, 60%, 1);
+$celadon: hsla(136, 29%, 75%, 1);
+$mint-cream: hsla(120, 24%, 94%, 1);
+$caput-mortuum: hsla(13, 46%, 22%, 1);
+$black-bean: hsla(353, 50%, 13%, 1);
+
+$primary: red;
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
