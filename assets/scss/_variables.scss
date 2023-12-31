@@ -1,0 +1,36 @@
+// my own var
+$cambridge-blue: hsla(143, 30%, 60%, 1);
+$celadon: hsla(136, 29%, 75%, 1);
+$mint-cream: hsla(120, 24%, 94%, 1);
+// $white: #fff;
+$caput-mortuum: hsla(13, 46%, 22%, 1);
+$black-bean: hsla(353, 50%, 13%, 1);
+// $caramel: hsla(35, 75%, 55%, 1);
+// $espresso: hsla(30, 25%, 15%, 1);
+// $seal-brown: #422110;
+$smokey-black: #12100e;
+$ochre: #DB7C26;
+$sage: #C7C7A6;
+$burnt-orange: #BC5D2E;
+
+$ff-one: 'Archivo Narrow', sans-serif;
+$ff-two: 'Poiret One', sans-serif;
+
+// Coffee-themed colors
+$coffee-brown: #4A2C1D;     // Rich coffee brown
+$caramel: #B1733F;          // Caramel accent
+$cream: #F8F4EB;            // Creamy light color
+$espresso: #2B1B17;         // Deep espresso brown
+$latte: #D5B59F;            // Latte beige
+$accent-green: #678963;     // Accent green for freshness
+$accent-red: #A43F37;       // Accent red for warmth
+
+// Bootstrap 5 colors with coffee-themed colors
+$primary: $coffee-brown;    // Primary coffee brown
+$secondary: $caramel;        // Caramel accent as secondary color
+$success: $accent-green;     // Fresh green as success color
+$info: $latte;               // Latte beige as info color
+$warning: $accent-red;       // Warm red as warning color
+$danger: $espresso;          // Deep espresso brown as danger color
+$light: $cream;              // Creamy light color as background
+$dark: $black-bean;            // Deep espresso brown as dark color
