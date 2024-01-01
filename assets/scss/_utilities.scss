@@ -50,6 +50,11 @@
 .mt-6 {
     margin-top: 10rem !important;
 }
+@media (max-width: 768px) {
+    .mt-6 {
+        margin-top: 2rem !important;
+    }
+}
 // alignment
 .h-align {
     margin-inline: auto;
@@ -62,3 +67,5 @@
 .bg-sage {
     background-color: $sage;
 }
+
+// custom sizes

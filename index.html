@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="assets/images/cup.png" type="image/png">
     <title>Kopii</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/hover.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&family=Tenor+Sans&display=swap" rel="stylesheet">
@@ -19,9 +20,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-lg-transparent fixed-top d-none d-lg-block">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="assets/images/kopii-light.png" alt="" width="70"></a>
+                <a class="navbar-brand hvr-wobble-horizontal" href="#"><img src="assets/images/kopii-light.png" alt="" width="70"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,17 +35,56 @@
                             <a class="nav-link" href="#">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Kopii Stop</a>
+                            <a class="nav-link" href="#kopii_stop">Kopii Stop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="#about_us">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact Us</a>
                         </li>
-                        <button type="button" class="btn btn-danger btn-sm bs-danger ms-2 fw-medium text-info">Login/Signup</button>
+                        <button id="login" class="btn hvr-bounce-to-top btn-danger btn-sm bs-danger ms-2 fw-medium text-info">Login/Signup</button>
                     </ul>
                 </div>
+            </div>
+        </nav>
+        <!-- off-canvas for mobile -->
+        <nav class="navbar navbar-dark bg-dark fixed-top d-block d-lg-none">
+            <div class="container-fluid">
+                <a class="navbar-brand hvr-wobble-horizontal" href="#"><img src="assets/images/kopii-light.png" alt="" width="70"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dashboard</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav nav-underline ff-main fs-6 justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#kopii_stop">Kopii Stop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about_us">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                            <button id="login" class="btn hvr-bounce-to-top btn-danger btn-sm bs-danger ms-2 fw-medium text-info">Login/Signup</button>
+                        </ul>
+                        <!-- <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form> -->
+                    </div>
+              </div>
             </div>
         </nav>
     </header>
@@ -55,21 +95,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 text-light">
-                        <h1 class="display-3 ls-1">Kopii, Your Gateway to Flavorful Delights</h1>
+                        <h1 class="display-1 ls-1">Kopii, Your Gateway to Flavorful Delights</h1>
                         <p class="lead ff-lead ls-1 lh-1 text-light">Embark on a unique coffee adventure with Kopii. Explore rare blends and timeless classics, curated to elevate your coffee experience. Start your journey now – shop our exclusive selection and transcend ordinary coffee encounters.</p>
-                        <button class="btn btn-primary btn-lg bs-primary text-info" type="button">Order Now</button>
+                        <button class="btn btn-primary btn-lg bs-primary text-info hvr-glow" type="button">Order Now<i class="fa-solid fa-chevron-right ms-2"></i></button>
                     </div>
                 </div>
             </div>
         </section>
         <!-- about -->
-        <section class="bg-danger py-3">
+        <section id="about_us" class="bg-danger pt-5 pb-3">
             <div class="container">
                 <div class="row gap-5">
                     <div class="col text-success ff-main">
                         <h1 class="text-info">Discover Kopii: Crafting Moments, Brewing Stories</h1>
                     </div>
-                    <div class="col text-center">
+                    <div class="col text-center d-none d-lg-block">
                         <img src="assets/images/kopii-logo.png" alt="" width="180">
                         <img src="assets/images/kopii-light.png" alt="" width="180">
                     </div>
@@ -78,29 +118,29 @@
         </section>
         <section class="py-6 patterns-bg">
             <div class="container">
-                <div class="row gap-5 justify-content-center">
-                    <div class="col-5 text-center">
+                <div class="row gap-5 justify-content-center align-items-center">
+                    <div class="col-5 text-center d-none d-lg-block">
                         <img class="img-fluid shadow" src="assets/images/vision.jpg" alt="">
                     </div>
-                    <div class="col-5 text-success ff-main">
+                    <div class="col-11 col-lg-5 text-success ff-main">
                         <h1 class="text-info">Elevating Global Coffee Culture: Kopii's Vision</h1>
                         <p class="ls-1 ff-lead fw-bold mt-4 lh-1">At Kopii, we envision more than just a cup of coffee; we see a global community coming together to celebrate diversity, support local businesses, and elevate the entire coffee experience. Our vision is to redefine the very essence of coffee culture, making it a shared journey of joy and connection.</p>
                     </div>
                 </div>
-                <div class="row gap-5 justify-content-center mt-6">
-                    <div class="col-5 text-success ff-main">
+                <div class="row gap-5 justify-content-center align-items-center mt-6 ">
+                    <div class="col-11 col-lg-5 text-success ff-main">
                         <h1 class="text-info">Empowering Through Integration: Kopii's Mission</h1>
                         <p class="ls-1 ff-lead fw-bold mt-4 lh-1">Kopii is on a mission to empower coffee enthusiasts and local coffee shop owners alike. Through our seamlessly integrated platform, we offer not just convenience and variety but also a sense of community. Join us as we create a space where every coffee lover finds empowerment and every local business flourishes</p>
                     </div>
-                    <div class="col-5 text-center">
+                    <div class="col-5 text-center d-none d-lg-block">
                         <img class="img-fluid shadow" src="assets/images/bg-lg-5.jpg" alt="">
                     </div>
                 </div>
                 <div class="row text-center text-light mt-6">
                     <h2 class="ff-main">Kopii's Features</h2>
                 </div>
-                <div class="row mt-4">
-                    <div class="col shadow-lg">
+                <div class="row mt-4 gap-4 gap-lg-0">
+                    <div class="col-lg-4 shadow-lg">
                         <div class="card bg-danger bs-danger border-0 p-2">
                             <div class="card-body text-info">
                                 <i class="fa-solid fa-mug-saucer fs-3 mb-3"></i>
@@ -109,7 +149,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col shadow-lg">
+                    <div class="col-lg-4 shadow-lg">
                         <div class="card bg-danger bs-danger border-0 p-2">
                             <div class="card-body text-info">
                                 <i class="fa-solid fa-handshake fs-3 mb-3"></i>
@@ -118,7 +158,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-4 shadow-lg">
                         <div class="card bg-danger bs-danger border-0 p-2">
                             <div class="card-body text-info">
                                 <i class="fa-solid fa-wand-sparkles fs-3 mb-3"></i>
@@ -126,6 +166,142 @@
                                 <p class="card-text ff-lead fw-bold ls-1 lh-1">Experience coffee like never before. Kopii offers a seamless integration of convenience, variety, and a sense of community for every coffee lover.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- kopii stop -->
+        <section class="kopii-stop bg-success pb-5" id="kopii_stop">
+            <div class="container">
+                <div class="row">
+                    <div class="row justify-content-between align-items-center mt-6">
+                        <div class="col-lg-6 text-dark ff-main">
+                            <h1 class="text-light display-4">Kopii Stop: Your Ultimate Coffee Delivery Destination</h1>
+                            <p class="ls-1 ff-lead fw-bold mt-4 lh-1">Indulge in the luxury of having your favorite coffee delights delivered to your doorstep with Kopii Stop. We bring the bustling coffee culture right to your fingertips, offering a diverse selection from local coffee shops to renowned brands. Explore, order, and savor the rich flavors of Kopii Stop.</p>
+                            <button class="btn btn-danger btn-lg bs-danger text-info hvr-glow" type="button">Discover Kopii Stop<i class="fa-solid fa-chevron-right ms-2"></i></button>
+                        </div>
+                        <div class="col-6 d-none d-lg-block text-center">
+                            <img class="img-fluid shadow-lg" src="assets/images/bg-lg-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 border-bottom border-dark">
+                    <div class="col-1">
+                        <img src="assets/images/kopii-stop-light.png" alt="" width="160">
+                    </div>
+                </div>
+                <div class="row mt-3 p-3 grid row-gap-4">
+                    <div class="col-6 col-lg-3">
+                        <div class="card border-0 shadow-lg">
+                            <img class="bd-placeholder-img card-img-top" src="assets/images/card-1.jpg" alt="">
+                            <div class="card-body bg-sage rounded">
+                              <h5 class="card-title ff-main">Black Beans</h5>
+                              <p class="card-text ff-lead fw-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                              <a href="#" class="btn btn-outline-primary ff-main hvr-glow">Check it out<i class="fa-solid fa-chevron-right ms-2"></i></a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="card border-0">
+                            <img class="bd-placeholder-img card-img-top" src="assets/images/card-3.jpg" alt="">
+                            <div class="card-body bg-sage rounded">
+                              <h5 class="card-title ff-main">Black Beans</h5>
+                              <p class="card-text ff-lead fw-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                              <a href="#" class="btn btn-outline-primary ff-main hvr-glow">Check it out<i class="fa-solid fa-chevron-right ms-2"></i></a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="card border-0 shadow-lg">
+                            <img class="bd-placeholder-img card-img-top" src="assets/images/card-9.jpg" alt="">
+                            <div class="card-body bg-sage rounded">
+                                <h5 class="card-title ff-main">Black Beans</h5>
+                                <p class="card-text ff-lead fw-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-outline-primary ff-main hvr-glow">Check it out<i class="fa-solid fa-chevron-right ms-2"></i></a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="card border-0 shadow-lg">
+                            <img class="bd-placeholder-img card-img-top" src="assets/images/card-4.jpg" alt="">
+                            <div class="card-body bg-sage rounded">
+                                <h5 class="card-title ff-main">Black Beans</h5>
+                                <p class="card-text ff-lead fw-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-outline-primary ff-main hvr-glow">Check it out<i class="fa-solid fa-chevron-right ms-2"></i></a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonials -->
+        <section class="testimonials ff-main bg-sage pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col my-5 text-center">
+                        <h1>Reviews</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide col">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="card mb-3 w-75 mx-auto">
+                                    <div class="card-body shadow">
+                                        <div class="avatar d-flex flex-row gap-3">
+                                            <div class="avatar-img">
+                                                <img class="img-fluid rounded-5" src="assets/images/avatar.jpg" alt="">
+                                            </div>
+                                            <div class="avatar-name">
+                                                <h5 class="mb-0">Sarah Thompson</h5>
+                                                <small>Freelance Writer</small>
+                                            </div>
+                                        </div>
+                                        <p class="mt-3">Kopii has become my go-to platform for sourcing inspiration and fueling my creativity. The diverse range of coffee blends and the seamless ordering process make it a delightful experience. Kopii's commitment to supporting local businesses is something I truly appreciate.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <div class="card mb-3 w-75 mx-auto">
+                                    <div class="card-body shadow">
+                                        <div class="avatar d-flex flex-row gap-3">
+                                            <div class="avatar-img">
+                                                <img class="img-fluid rounded-5" src="assets/images/avatar-2.jpg" alt="">
+                                            </div>
+                                            <div class="avatar-name">
+                                                <h5 class="mb-0">Alex Rodriguez</h5>
+                                                <small>Graphic Designer</small>
+                                            </div>
+                                        </div>
+                                        <p class="mt-3">As a designer, I'm drawn to aesthetics, and Kopii nails it! From the visually pleasing interface to the unique coffee brands available, it's a perfect blend of style and substance. Kopii has added a daily dose of inspiration to my work routine.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <div class="card mb-3 w-75 mx-auto">
+                                    <div class="card-body shadow">
+                                        <div class="avatar d-flex flex-row gap-3">
+                                            <div class="avatar-img">
+                                                <img class="img-fluid rounded-5" src="assets/images/avatar-3.jpg" alt="">
+                                            </div>
+                                            <div class="avatar-name">
+                                                <h5 class="mb-0">David Chang</h5>
+                                                <small>Small Business Owner (Local Cafe)</small>
+                                            </div>
+                                        </div>
+                                        <p class="mt-3">Kopii has been a game-changer for my local cafe. The exposure we gained through their platform significantly boosted our sales. The inventory management tools and real-time analytics for shop owners are incredibly useful. Kopii is more than just a marketplace; it's a lifeline for local businesses.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
