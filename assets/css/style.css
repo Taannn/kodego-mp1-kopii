@@ -119,6 +119,15 @@
   color: hsl(353, 50%, 13%);
 }
 
+.card-bg {
+  background-image: url("../images/quote.svg");
+  background-size: contain;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+  background-size: 5rem 6rem;
+}
+
 .avatar-img {
   max-width: 3rem;
 }

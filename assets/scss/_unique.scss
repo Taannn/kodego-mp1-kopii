@@ -23,3 +23,11 @@
 #login:hover {
     color: $dark;
 }
+.card-bg {
+    background-image: url('../images/quote.svg');
+    background-size: contain;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-size: 5rem 6rem;
+}
