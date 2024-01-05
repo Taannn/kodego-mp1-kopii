@@ -1,3 +1,17 @@
-.avatar-img {
-    max-width: 3rem;
+.full-dimension {
+    height: 100vh;
+}
+.half-dimension {
+    height: 50vh;
+}
+
+// grid
+.gridbox {
+    display: grid;
+}
+
+
+.flexbox-sb {
+    display: flex;
+    justify-content: space-between;
 }

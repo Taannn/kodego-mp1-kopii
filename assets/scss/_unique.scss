@@ -4,6 +4,9 @@
     background-position: right;
     background-blend-mode: difference;
 }
+.avatar-img {
+    max-width: 3rem;
+}
 @media (max-width: 768px) {
     .hero {
         background-color: #000000;

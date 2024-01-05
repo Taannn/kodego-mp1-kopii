@@ -3,9 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../assets/images/cup.png" type="image/png">
+    <title>Kopii Shop</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/hover.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <!-- https://codepen.io/sowmyaseshadri/pen/KxQMEP product card (chosen one for all cards)-->
+    <!-- https://codepen.io/ahmadnasr/pen/rZKLgg card for kopii deliverables -->
+    <!-- https://codepen.io/veronicadev/pen/WJyOwG card again (tone down the hover by a bit) -->
+    <!-- https://codepen.io/takaneichinose/pen/xvpqgo has potential for shop profile -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/0aec4264dc.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
+<body class="bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-block bg-danger">
+            <div class="container">
+                <a class="navbar-brand hvr-wobble-horizontal" href="#"><img src="assets/images/kopii-light.png" alt="" width="70"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+                    <ul class="navbar-nav nav-underline ff-main fs-6">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/kopii-stop.html">Kopii Stop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact_us">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Start Selling</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav nav-underline ff-main fs-6">
+                        <a id="login" href="signup.html" class="btn hvr-bounce-to-top btn-dark btn-sm bs-dark ms-2 fw-medium text-info pt-2">Login/Signup</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- off-canvas for mobile -->
+        <nav class="navbar navbar-dark bg-danger fixed-top d-block d-lg-none">
+            <div class="container-fluid">
+                <a class="navbar-brand hvr-wobble-horizontal" href="#"><img src="assets/images/kopii-light.png" alt="" width="70"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dashboard</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav nav-underline ff-main fs-6 justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/kopii-shop.html">Kopii Stop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contact-us.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Start Selling</a>
+                            </li>
+                            <a id="login" href="signup.html" class="btn hvr-bounce-to-top btn-danger btn-sm bs-danger ms-2 fw-medium text-info pt-2">Login/Signup</a>
+                        </ul>
+                    </div>
+              </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger mt-5 pt-lg-5 py-3 ff-main">
+            <div class="container">
+                <a class="navbar-brand hvr-wobble-vertical" href="#"><img src="../assets/images/kopii-light.png" width="110" alt=""></a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-lg-auto">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit">Search</button>
+                    </form>
+
+                </div>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping ms-1 ms-lg-3 text-info"></i></a>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- carousel -->
+        <div class="container mt-5">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" src="../assets/images/carousel-3.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block text-danger">
+                      <h5>Crafted Elegance in Every Sip</h5>
+                      <p>Experience the precision of our state-of-the-art machines, bringing you the perfect cup of coffee with every pour.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" src="../assets/images/carousel-1.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block text-light">
+                      <h5>From Farm to Cup, Pure Excellence</h5>
+                      <p>Our coffee beans are meticulously sourced, roasted, and blended to perfection, promising a rich and aromatic flavor in every brew.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" src="../assets/images/carousel-2.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block text-light">
+                      <h5>Efforless Espresso, Exceptional Taste</h5>
+                      <p>Witness the artistry of automation as our machines create espresso masterpieces, ensuring consistency and quality in every shot.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- featured -->
+        <section class="featured">
+            <div class="container">
+                <div class="row m-2 m-lg-0">
+                    <div class="col text-center text-dark bg-sage p-2 ff-main rounded mt-5 mb-3">
+                        <h1>Featured</h1>
+                    </div>
+                </div>
+                <div class="row bg-sage rounded py-2 gap-4 gap-lg-0 m-2 m-lg-0">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="container-item fancy-card-i">
+                            <div class="overlay">
+                                <div class = "items"></div>
+                                <div class = "items head ff-main">
+                                    <p>Kopii: Lorem, ipsum.</p>
+                                    <hr>
+                                </div>
+                                <div class = "items price ff-lead">
+                                    <p class="old">₱499</p>
+                                    <p class="new">₱388</p>
+                                </div>
+                                <div class="items cart ff-main">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <a href="../pages/cart.html" class="text-decoration-none"><span>ADD TO CART</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="container-item fancy-card-ii">
+                            <div class="overlay">
+                                <div class = "items"></div>
+                                <div class = "items head ff-main">
+                                    <p>Kopii: Lorem, ipsum.</p>
+                                    <hr>
+                                </div>
+                                <div class = "items price ff-lead">
+                                    <p class="old">₱560</p>
+                                    <p class="new">₱499</p>
+                                </div>
+                                <div class="items cart ff-main">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <a href="../pages/cart.html" class="text-decoration-none"><span>ADD TO CART</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="container-item fancy-card-iii">
+                            <div class="overlay">
+                                <div class = "items"></div>
+                                <div class = "items head ff-main">
+                                    <p>Kopii: Lorem, ipsum.</p>
+                                    <hr>
+                                </div>
+                                <div class = "items price ff-lead">
+                                    <p class="old">₱300</p>
+                                    <p class="new">₱219</p>
+                                </div>
+                                <div class="items cart ff-main">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <a href="../pages/cart.html" class="text-decoration-none"><span>ADD TO CART</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="container-item fancy-card-iv">
+                            <div class="overlay">
+                                <div class = "items"></div>
+                                <div class = "items head ff-main">
+                                    <p>Kopii: Lorem, ipsum.</p>
+                                    <hr>
+                                </div>
+                                <div class = "items price ff-lead">
+                                    <p class="old">₱566</p>
+                                    <p class="new">₱312</p>
+                                </div>
+                                <div class="items cart ff-main">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <a href="../pages/cart.html" class="text-decoration-none"><span>ADD TO CART</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-2 m-lg-0">
+                    <div class="col text-center text-dark bg-sage p-2 ff-main rounded mt-5 mb-3">
+                        <h1>Categories</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

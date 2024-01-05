@@ -14,11 +14,28 @@
     <!-- https://codepen.io/ahmadnasr/pen/rZKLgg card for kopii deliverables -->
     <!-- https://codepen.io/veronicadev/pen/WJyOwG card again (tone down the hover by a bit) -->
     <!-- https://codepen.io/takaneichinose/pen/xvpqgo has potential for shop profile -->
-    <!-- https://codepen.io/technext/pen/eYvoYgM?editors=1100 potential login/sign-up code -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/0aec4264dc.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 ff-main" id="exampleModalLabel">Welcome to the Kopii Community!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ff-main">
+                    <p>Thank you for subscribing to our newsletter! Get ready for a rich blend of exciting updates, special promotions, and coffee-filled stories. Your journey with Kopii just got even more flavorful. Cheers to being part of our vibrant community!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Start Exploring</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-lg-transparent fixed-top d-none d-lg-block">
             <div class="container">
@@ -32,7 +49,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shop</a>
+                            <a class="nav-link" href="pages/kopii-shop.html">Shop</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#kopii_stop">Kopii Stop</a>
@@ -43,7 +60,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contact_us">Contact Us</a>
                         </li>
-                        <a id="login" href="pages/signup-setup.html" class="btn hvr-bounce-to-top btn-danger btn-sm bs-danger ms-2 fw-medium text-info pt-2">Login/Signup</a>
+                        <a id="login" href="pages/signup.html" class="btn hvr-bounce-to-top btn-danger btn-sm bs-danger ms-2 fw-medium text-info pt-2">Login/Signup</a>
                     </ul>
                 </div>
             </div>
@@ -77,12 +94,8 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact_us">Contact Us</a>
                             </li>
-                            <a id="login" href="pages/signup-setup.html" class="btn hvr-bounce-to-top btn-danger btn-sm bs-danger ms-2 fw-medium text-info pt-2">Login/Signup</a>
+                            <a id="login" href="pages/signup.html" class="btn hvr-bounce-to-top btn-danger btn-sm bs-danger ms-2 fw-medium text-info pt-2">Login/Signup</a>
                         </ul>
-                        <!-- <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-success" type="submit">Search</button>
-                        </form> -->
                     </div>
               </div>
             </div>
@@ -97,7 +110,7 @@
                     <div class="col-lg-6 text-light">
                         <h1 class="display-1 ls-1">Kopii, Your Gateway to Flavorful Delights</h1>
                         <p class="lead ff-lead ls-1 lh-1 text-light">Embark on a unique coffee adventure with Kopii. Explore rare blends and timeless classics, curated to elevate your coffee experience. Start your journey now – shop our exclusive selection and transcend ordinary coffee encounters.</p>
-                        <button class="btn btn-primary btn-lg bs-primary text-info hvr-glow" type="button">Order Now<i class="fa-solid fa-chevron-right ms-2"></i></button>
+                        <a href="pages/kopii-shop.html" class="btn btn-primary btn-lg bs-primary text-info hvr-glow text-decoration-none">Shop Now<i class="fa-solid fa-chevron-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -171,14 +184,14 @@
             </div>
         </section>
         <!-- kopii stop -->
-        <section class="kopii-stop bg-success pb-5" id="kopii_stop">
+        <section class="kopii-stop bg-success pb-5 pt-5 pt-lg-0" id="kopii_stop">
             <div class="container">
                 <div class="row">
                     <div class="row justify-content-between align-items-center mt-6">
                         <div class="col-lg-6 text-dark ff-main">
                             <h1 class="text-light display-4">Kopii Stop: Your Ultimate Coffee Delivery Destination</h1>
                             <p class="ls-1 ff-lead fw-bold mt-4 lh-1">Indulge in the luxury of having your favorite coffee delights delivered to your doorstep with Kopii Stop. We bring the bustling coffee culture right to your fingertips, offering a diverse selection from local coffee shops to renowned brands. Explore, order, and savor the rich flavors of Kopii Stop.</p>
-                            <a href="#" class="btn btn-danger btn-lg bs-danger text-info hvr-glow">Discover Kopii Stop<i class="fa-solid fa-chevron-right ms-2"></i></a>
+                            <a href="pages/kopii-stop.html" class="btn btn-danger btn-lg bs-danger text-info hvr-glow">Discover Kopii Stop<i class="fa-solid fa-chevron-right ms-2"></i></a>
                         </div>
                         <div class="col-6 d-none d-lg-block text-center">
                             <img class="img-fluid shadow-lg" src="assets/images/bg-lg-2.jpg" alt="">
@@ -307,7 +320,7 @@
             </div>
         </section>
         <!-- newsletter -->
-        <section class="newsletter bg-secondary pt-4 pb-2">
+        <section class="newsletter bg-secondary pt-4">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-5 text-light ff-main">
@@ -316,9 +329,9 @@
                     </div>
                     <div class="col-lg-5">
                         <form>
-                            <div class="mb-3 d-flex">
+                            <div class="mb-4 d-flex">
                                 <input type="email" class="form-control rounded-start-2 ff-main" id="emailInput" placeholder="Enter your email">
-                                <button type="submit" class="btn btn-primary d-inline-block ff-main">Subscribe</button>
+                                <button type="submit" class="btn btn-primary d-inline-block ff-main" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe</button>
                             </div>
                         </form>
                     </div>
@@ -349,7 +362,7 @@
                             <h6 class="text-uppercase mb-4 font-weight-bold">Shop Now</h6>
                             <p><a class="text-white text-decoration-none" href="pages/kopii-shop.html">Kopii Shop</a></p>
                             <p><a class="text-white text-decoration-none" href="pages/kopii-stop.html">Kopii Stop</a></p>
-                            <p><a class="text-white text-decoration-none" href="pages/about-us.html">Talk to Us</a></p>
+                            <p><a class="text-white text-decoration-none" href="pages/contact-us.html">Talk to Us</a></p>
                             <p><a class="text-white text-decoration-none">Help</a></p>
                         </div>
                         <hr class="w-100 clearfix d-md-none" />
@@ -357,8 +370,8 @@
                             <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
                             <p><i class="fas fa-home mr-3"></i> Sabaody, <del>3D</del>2Y</p>
                             <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 63 234 567 8901</p>
+                            <p><i class="fas fa-print mr-3"></i> + 63 234 567 8901</p>
                         </div>
                     </div>
                 </section>
