@@ -18,19 +18,18 @@
     <script src="https://kit.fontawesome.com/0aec4264dc.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-light">
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <!-- <div class="toast-container position-fixed bottom-0 end-0 p-3 ff-main">
+        <div id="liveToast" class="toast bg-info text-light" role="alert" aria-live="assertive" aria-atomic="true">
           <div class="toast-header">
-            <img src="..." class="rounded me-2" alt="...">
-            <strong class="me-auto">Bootstrap</strong>
-            <small>11 mins ago</small>
+            <strong class="me-auto">Add to Cart</strong>
+            <small>1 sec ago</small>
             <button type="button" class="btn-close" aria-label="Close"></button>
           </div>
           <div class="toast-body">
-            Hello, world! This is a toast message.
+            Successfully added!
           </div>
         </div>
-      </div>
+      </div> -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-block bg-danger">
             <div class="container">
@@ -59,7 +58,7 @@
                 </div>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav nav-underline ff-main fs-6">
-                        <a id="login" href="signup-setup.html" class="btn hvr-bounce-to-top btn-dark btn-sm bs-dark ms-2 fw-medium text-info pt-2">Login/Signup</a>
+                        <a id="login" href="signup.html" class="btn hvr-bounce-to-top btn-dark btn-sm bs-dark ms-2 fw-medium text-info pt-2">Login/Signup</a>
                     </ul>
                 </div>
             </div>
@@ -125,6 +124,14 @@
         </nav>
     </header>
     <main>
+        <div class="container mt-2 ff-main">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="kopii-shop.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Elegant Ceramic Cup Set</li>
+                </ol>
+              </nav>
+        </div>
         <div class="container my-5 ff-main">
             <div class="row">
                 <div class="col-md-5">
@@ -132,16 +139,16 @@
                         <img class="img-fluid" src="../assets/images/product-detail-1.jpg" alt="ProductS">
                         <div class="row my-3 previews">
                             <div class="col-md-3">
-                                <img class="w-100" src="../assets/images/product-detail-2.jpg" alt="Sale">
+                                <img class="w-100 d-none d-lg-block" src="../assets/images/product-detail-2.jpg" alt="Sale">
                             </div>
                             <div class="col-md-3">
-                                <img class="w-100" src="../assets/images/product-detail-3.jpg" alt="Sale">
+                                <img class="w-100 d-none d-lg-block" src="../assets/images/product-detail-3.jpg" alt="Sale">
                             </div>
                             <div class="col-md-3">
-                                <img class="w-100" src="../assets/images/product-detail-4.jpg" alt="Sale">
+                                <img class="w-100 d-none d-lg-block" src="../assets/images/product-detail-4.jpg" alt="Sale">
                             </div>
                             <div class="col-md-3">
-                                <img class="w-100" src="../assets/images/product-detail-5.jpg" alt="Sale">
+                                <img class="w-100 d-none d-lg-block" src="../assets/images/product-detail-5.jpg" alt="Sale">
                             </div>
                         </div>
                     </div>
@@ -169,7 +176,7 @@
                                 <a href="#" class="shadow btn custom-btn ">Buy Now</a>
                             </div>
                             <div class="block">
-                                <button class="shadow btn custom-btn add-to-cart-btn" id="liveToastBtn">Add to cart</button>
+                                <a href="signup.html" class="shadow btn custom-btn add-to-cart-btn">Add to cart</a>
                             </div>
 
                             <div class="block quantity">
@@ -247,26 +254,61 @@
         </div>
 
     </main>
-
-    <footer></footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.add-to-cart-btn').on('click', function () {
-                // Show the badge and set the count to 1
-                $('.badge').show().text(1);
-            });
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      document.getElementById('liveToastBtn').addEventListener('click', function () {
-        var toastLiveExample = document.getElementById('liveToast');
-        var toast = new bootstrap.Toast(toastLiveExample);
-
-        toast.show();
-      });
-    </script>
+    <!-- footer -->
+    <footer id="contact_us" class="text-center text-lg-start text-info bg-primary ff-main">
+        <div class="container">
+            <div class="container p-4 pb-0">
+                <section class="">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Kopii</h6>
+                            <p>Kopii, a visionary online platform that transcends the conventional coffee shopping experience. Meticulously crafted for coffee enthusiasts, it goes beyond mere commerce, establishing itself as a haven for those who savor every aspect of the coffee journey. </p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Navigation</h6>
+                            <p><a class="text-white text-decoration-none" href="#home">Home</a></p>
+                            <p><a class="text-white text-decoration-none" href="#about_us">About Us</a></p>
+                            <p><a class="text-white text-decoration-none" href="#kopii_stop">Kopii Stop</a></p>
+                            <p><a class="text-white text-decoration-none" href="#reviews">Reviews</a></p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Shop Now</h6>
+                            <p><a class="text-white text-decoration-none" href="pages/kopii-shop.html">Kopii Shop</a></p>
+                            <p><a class="text-white text-decoration-none" href="pages/kopii-stop.html">Kopii Stop</a></p>
+                            <p><a class="text-white text-decoration-none" href="pages/contact-us.html">Talk to Us</a></p>
+                            <p><a class="text-white text-decoration-none">Help</a></p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                            <p><i class="fas fa-home mr-3"></i> Sabaody, <del>3D</del>2Y</p>
+                            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 63 234 567 8901</p>
+                            <p><i class="fas fa-print mr-3"></i> + 63 234 567 8901</p>
+                        </div>
+                    </div>
+                </section>
+                <hr class="my-3">
+                <section class="p-3 pt-0">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-7 col-lg-8 text-center text-md-start">
+                            <div class="p-3">
+                                &copy; 2020 Copyright:
+                                <a class="text-white text-decoration-none" href="https://mdbootstrap.com/">Kopii</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-google"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
