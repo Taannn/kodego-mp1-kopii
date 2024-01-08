@@ -19,18 +19,6 @@
     <script src="https://kit.fontawesome.com/0aec4264dc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="toast-container position-fixed bottom-0 end-0 p-3 ff-main">
-        <div id="liveToast" class="toast bg-info text-light" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="toast-header">
-            <strong class="me-auto">Add to Basket</strong>
-            <small>1 sec ago</small>
-            <button type="button" class="btn-close" aria-label="Close"></button>
-          </div>
-          <div class="toast-body text-dark">
-            Successfully added!
-          </div>
-        </div>
-    </div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top d-none d-lg-block">
             <div class="container">
@@ -71,43 +59,8 @@
                 <h5 class="offcanvas-title" id="cartOffcanvasLabel">Basket</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
-                <div class="card p-0 mt-3 bg-light">
-                    <div class="card-header ff-main">
-                      BrewMunch Delights
-                    </div>
-                    <div class="card-body row d-flex align-items-center ff-main">
-                        <div class="col d-flex align-items-center py-2">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                <label class="form-check-label" for="flexCheckDefault"></label>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <div><img class="img-fluid" style="background-size: contain; width: 5rem; height: 6rem;"    src="../assets/images/product-detail-1.jpg" alt=""></div>
-                                <div>
-                                    <h5 class="card-title">Caramel Macchiato Morsels</h5>
-                                </div>
-                            </div>
-                         </div>
-                        <div class="col d-flex">
-                            <div class="border p-2">+</div>
-                            <div class="border p-2">1</div>
-                            <div class="border p-2">-</div>
-                        </div>
-                        <div class="col">₱ 150.00</div>
-                    </div>
-                    <div class="card-footer text-body-secondary d-flex justify-content-between ff-main">
-                        <p>Total</p>
-                        <p>150.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row p-2 m-2 bg-info">
-                <div class="col d-flex justify-content-between ff-main align-items-center">
-                    <h1>Total</h1>
-                    <p>₱ 150.00</p>
-                </div>
-                <a href="#" class="btn btn-secondary text-decoration-none w-100 text-light ff-main">Review Order<a>
+            <div class="offcanvas-body ff-main text-dark">
+                <h1 class="display-4" style="opacity: .3;">No items added</h1>
             </div>
         </div>
 
@@ -127,120 +80,72 @@
     </header>
     <!-- main -->
     <main>
-        <div class="container">
-            <div class="row mt-5 pt-4 mb-4 ff-main">
-                <div class="col">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="#">Home</a></li>
-                          <li class="breadcrumb-item"><a href="stop-category-logged-ver.html">Snacks</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">BrewMunch Delights</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <!-- shop details -->
-        <section class="product-details border-bottom border-2">
+        <section class="hero-stop pt-6 half-dimension border-bottom border-2 border-dark px-3 px-md-0">
             <div class="container">
                 <div class="row">
-                    <div class="col ff-main">
-                        <h1 class="display-1">BrewMunch Delights</h1>
-                        <p class="lead">Gourmet Coffee Snacks</p>
-                        <div class="ff-main d-flex gap-3">
-                            <div class="rating d-flex">
-                                <i class="fa-solid fa-star pt-1 me-1" style="color: yellow; font-size: 1rem;"></i>
-                                <p>4.8</p>
-                            </div>
-                            <div class="time d-flex">
-                                <i class="fa-regular fa-clock pt-1 me-1"></i>
-                                <p>25mins</p>
-                            </div>
-                            <div class="distance">
-                                <p>1 km</p>
-                            </div>
-                        </div>
-                        <p>Opening Hours: Today (09:30 - 23:00)</p>
+                    <div class="col-md-5 bg-light border-1 text-danger rounded p-4">
+                        <h1 class="display-2 ff-main">Where should we deliver your food today?</h1>
+                        <div class="input-group mb-3 ff-main">
+                            <input type="text" class="form-control" placeholder="Type your location" aria-label="Location" aria-describedby="searchButton">
+                            <button class="btn btn-primary" type="button" id="searchButton">Search</button>
+                          </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="container ff-main mt-4">
-            <div class="row">
-                <div class="col">
-                    <h2>What's new</h2>
+        <section class="categories pt-0 pt-md-5 mt-0 mt-md-5 px-3 px-md-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col ff-main mt-5">
+                        <h2 class="display-5">Categories</h2>
+                    </div>
                 </div>
-            </div>
-            <!-- actual products -->
-            <div class="row mt-3 mb-5">
-                <div class="col">
-                    <div class="card">
-                        <div class="category">
-                            <img src="../assets/images/milktea-2.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="card-body ff-main">
-                            <div class="card-title text-primary h3">Caramel Macchiato Morsels</div>
-                            <div class="card-text ff-main d-flex gap-3">Indulge in the rich flavors of caramel and espresso in these bite-sized delights.</div>
-                            <div class="pricing d-flex w-100 ff-main gap-1 align-items-center justify-content-between">
-                                <p class="mt-2">₱ 150.00</p>
-                                <button class="btn btn-success text-light px-3 py-1 add-to-cart-btn" id="liveToastBtn">+</button>
+                <div class="row mt-3 mb-5">
+                    <div class="col">
+                        <div class="card">
+                            <div class="category">
+                                <img src="../assets/images/milktea-2.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title text-primary ff-main h2">Milktea</div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <a href="#" class="text-decoration-none">
-                        <div class="card">
-                            <div class="category">
-                                <img src="../assets/images/snacks.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="card-body ff-main">
-                                <div class="card-title text-primary h3">Hazelnut Heaven Biscotti</div>
-                                <div class="card-text ff-main d-flex gap-3">Crispy biscotti infused with the irresistible essence of hazelnut and a hint of coffee.</div>
-                                <div class="pricing d-flex w-100 ff-main gap-1 align-items-center justify-content-between">
-                                    <p class="mt-2">₱ 180.00</p>
-                                    <button class="btn btn-success text-light px-3 py-1">+</button>
+                    <div class="col">
+                        <a href="stop-category-logged-ver.html" class="text-decoration-none">
+                            <div class="card">
+                                <div class="category">
+                                    <img src="../assets/images/snacks.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title text-primary ff-main h2">Snacks</div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#" class="text-decoration-none">
+                        </a>
+                    </div>
+                    <div class="col">
                         <div class="card">
                             <div class="category">
                                 <img src="../assets/images/coffee-cat.jpg" class="img-fluid" alt="">
                             </div>
-                            <div class="card-body ff-main">
-                                <div class="card-title text-primary h3">Vanilla Velvet Coffee Truffles</div>
-                                <div class="card-text ff-main d-flex gap-3">Luxurious truffles featuring a velvety blend of vanilla and premium coffee. lorem</div>
-                                <div class="pricing d-flex w-100 ff-main gap-1 align-items-center justify-content-between">
-                                    <p class="mt-2">₱ 200.00</p>
-                                    <button class="btn btn-success text-light px-3 py-1">+</button>
-                                </div>
+                            <div class="card-body">
+                                <div class="card-title text-primary ff-main h2">Coffee</div>
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#" class="text-decoration-none">
+                    </div>
+                    <div class="col">
                         <div class="card">
                             <div class="category">
                                 <img src="../assets/images/tea.jpg" class="img-fluid" alt="">
                             </div>
-                            <div class="card-body ff-main">
-                                <div class="card-title text-primary h3">Cinnamon Swirl Coffee Twists</div>
-                                <div class="card-text ff-main d-flex gap-3">Delight in the warmth of cinnamon paired with the essence of freshly brewed coffee in these twisted treats.</div>
-                                <div class="pricing d-flex w-100 ff-main gap-1 align-items-center justify-content-between">
-                                    <p class="mt-2">₱ 195.00</p>
-                                    <button class="btn btn-success text-light px-3 py-1">+</button>
-                                </div>
+                            <div class="card-body">
+                                <div class="card-title text-primary ff-main h2">Tea</div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <!-- footer -->
     <footer id="contact_us" class="text-center text-lg-start text-info bg-primary ff-main">
@@ -298,23 +203,5 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.add-to-cart-btn').on('click', function () {
-                // Show the badge and set the count to 1
-                $('.badge').show().text(1);
-            });
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      document.getElementById('liveToastBtn').addEventListener('click', function () {
-        var toastLiveExample = document.getElementById('liveToast');
-        var toast = new bootstrap.Toast(toastLiveExample);
-
-        toast.show();
-      });
-    </script>
 </body>
 </html>
