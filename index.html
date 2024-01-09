@@ -18,6 +18,7 @@
     <script src="https://kit.fontawesome.com/0aec4264dc.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="preloader"></div>
   <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -37,7 +38,7 @@
         </div>
     </div>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-lg-transparent fixed-top d-none d-lg-block">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-lg-transparent fixed-top d-none d-lg-block" style="z-index: 98;">
             <div class="container">
                 <a class="navbar-brand hvr-wobble-horizontal" href="#"><img src="assets/images/kopii-light.png" alt="" width="70"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -393,5 +394,13 @@
             </div>
         </div>
     </footer>
+    <!-- preloader script -->
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function() {
+            loader.style.display = "none";
+        })
+
+    </script>
 </body>
 </html>
