@@ -20,6 +20,7 @@
     <script src="https://kit.fontawesome.com/0aec4264dc.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="preloader"></div>
     <div class="toast-container position-fixed bottom-0 end-0 p-3 ff-main">
         <div id="liveToast" class="toast bg-info text-light" role="alert" aria-live="assertive" aria-atomic="true">
           <div class="toast-header">
@@ -316,6 +317,14 @@
 
         toast.show();
       });
+    </script>
+    <!-- preloader script -->
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function() {
+            loader.style.display = "none";
+        })
+
     </script>
 </body>
 </html>

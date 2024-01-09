@@ -21,6 +21,7 @@
     <script src="https://kit.fontawesome.com/0aec4264dc.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="preloader"></div>
     <div class="container-fluid">
 
         <div class="container">
@@ -159,5 +160,14 @@
           </div>
         </div>
           </div>
+
+          <!-- preloader script -->
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function() {
+          loader.style.display = "none";
+      })
+
+  </script>
 </body>
 </html>
