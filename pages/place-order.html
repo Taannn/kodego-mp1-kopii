@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/cup.png" type="image/png">
-    <title>Your Cart</title>
+    <title>Order Confirmation</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/hover.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,80 +104,90 @@
             </div>
         </nav>
     </header>
-    <!-- main items -->
+    <!-- main -->
     <main>
-        <section class="ff-main">
-            <div class="container mt-5">
-                <div class="row bg-light py-2 px-0 border-2 rounded">
-                    <div class="col-4">Product</div>
-                    <div class="col">Price</div>
-                    <div class="col">Quantity</div>
-                    <div class="col">Total Price</div>
-                    <div class="col">Action</div>
+        <div class="container">
+            <div class="card mt-5">
+                <div class="card-header ff-main text-primary">
+                    <i class="fa-solid fa-location-dot me-3"></i><span>Delivery Address</span>
                 </div>
-
-                <div class="card p-0 mt-3 bg-light">
-                    <div class="card-header">
-                      Featured
+                <div class="card-body d-flex justify-content-between ff-main">
+                  <p class="card-text">User Name (Phone Tel) 1234 567 8901 #123 elmo st. papaya village</p>
+                  <a href="#" class="btn btn-outline-primary">Change</a>
+                </div>
+              </div>
+              <!-- first order -->
+            <div class="card p-0 mt-3 bg-light mb-20">
+                <div class="card-header ff-main row">
+                    <div class="col-6 d-flex align-items-center py-2 ff-main">
+                        Product/s Ordered
+                     </div>
+                    <div class="col py-2">Unit Price</div>
+                    <div class="col py-2">
+                        Amount
                     </div>
-                    <div class="card-body row d-flex align-items-center">
-                        <div class="col-4 d-flex align-items-center py-2">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                <label class="form-check-label" for="flexCheckDefault"></label>
+                    <div class="col py-2">Subtotal</div>
+                </div>
+                <div class="card-body row d-flex align-items-center">
+                    <div class="col-6 d-flex align-items-center py-2 ff-main">
+                        <div class="d-flex gap-2">
+                            <div><img class="img-fluid" style="background-size: contain; width: 5rem; height: 6rem;"    src="../assets/images/product-detail-1.jpg" alt=""></div>
+                            <div>
+                                <h5 class="card-title">Elegant Ceramic Cup Set</h5>
+                                <p class="card-text">Indulge in your favorite brew with this elegant...</p>
                             </div>
-                            <div class="d-flex gap-2">
-                                <div><img class="img-fluid" style="background-size: contain; width: 5rem; height: 6rem;"    src="../assets/images/product-detail-1.jpg" alt=""></div>
-                                <div>
-                                    <h5 class="card-title">Elegant Ceramic Cup Set</h5>
-                                    <p class="card-text">Indulge in your favorite brew with this elegant...</p>
-                                </div>
-                            </div>
-                         </div>
-                        <div class="col">₱ 599.99</div>
-                        <div class="col d-flex">
-                            <div class="border p-2">+</div>
-                            <div class="border p-2">1</div>
-                            <div class="border p-2">-</div>
                         </div>
-                        <div class="col">₱ 599.99</div>
-                        <div class="col">
-                            <button class="btn btn-outline-success">Similar</button>
-                            <button class="btn btn-outline-warning">Delete</button>
-                        </div>
+                     </div>
+                    <div class="col ff-main">₱ 599.99</div>
+                    <div class="col ff-main">
+                        <div>1</div>
                     </div>
-                    <div class="card-footer text-body-secondary">
-                          No Shop Vouchers Selected
+                    <div class="col ff-main">₱ 599.99</div>
+                </div>
+                <div class="card-footer text-body-secondary py-0 ff-main">
+                    <div class="d-flex align-items-center gap-5 justify-content-end">
+                        <div class="mt-2">
+                            <span><i class="fa-solid fa-truck me-1"></i>Standard Delivery</span>
+                            <p>Received by Jan 15 - 18</p>
+                        </div>
+                        <span>₱ 38.1</span>
                     </div>
                 </div>
-
-                <div class="card position-absolute bottom-0 bg-light" style="width: 82%;">
-                    <div class="card-header">
-                        <div class="d-flex align-items-center gap-5 justify-content-end">
-                            <span><i class="fa-solid fa-ticket me-3"></i>Platform Voucher</span>
-                            <span>Enter Code</span>
-                        </div>
-                    </div>
-                    <div class="card-body row d-flex align-items-center">
-                        <div class="col-8 d-flex align-items-center py-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                <label class="form-check-label" for="flexCheckDefault"></label>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <div>
-                                    <p class="card-text">Select All (1 Item)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">Total(1 Item) ₱ 599.99</div>
-                        <div class="col">
-                            <a href="place-order.html" class="btn btn-secondary text-decoration-none text-light px-5">Check Out</a>
-                        </div>
-                    </div>
+                <div class="card-footer text-body-secondary text-end ff-main">
+                    Order Total (1 Item): ₱ 638
                 </div>
             </div>
-        </section>
+
+            <!-- payment method -->
+            <div class="card position-fixed bottom-0 border-3" style="width: 82.8%;">
+                <div class="card-header">
+                    <div class="d-flex align-items-center gap-5 justify-content-between ff-main">
+                        <h3>Payment Method</h3>
+                        <div>
+                            <span class="me-5">Cash on Delivery</span>
+                            <span class="btn btn-outline-primary py-1">change</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body ff-main">
+                    <div class="row text-end pb-2 justify-content-end">
+                        <span class="me-5 col-2">Order Total:</span>
+                        <span class="col-1">₱ 638</span>
+                    </div>
+                    <div class="row text-end pb-2 justify-content-end">
+                        <span class="me-5 col-2">Shipping Total:</span>
+                        <span class="col-1">₱ 45.6</span>
+                    </div>
+                    <div class="row text-end pb-2 justify-content-end">
+                        <span class="me-5 col-2"><i class="fa-solid fa-ticket me-3"></i>Total Payment:</span>
+                        <span class="col-1">₱ 683.6</span>
+                    </div>
+                </div>
+                <div class="card-footer text-body-secondary ff-main d-flex justify-content-end">
+                    <a href="#" class="btn btn-secondary btn-lg text-light">Place Order</a>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>

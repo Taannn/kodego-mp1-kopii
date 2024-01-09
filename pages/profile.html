@@ -27,7 +27,7 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
-                    <ul class="navbar-nav nav-underline ff-main fs-6">
+                    <ul class="navbar-nav nav-underline ff-main fs-6 px-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Shop</a>
                         </li>
@@ -45,11 +45,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <!-- <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav nav-underline ff-main fs-6">
                         <a id="login" href="signup.html" class="btn hvr-bounce-to-top btn-dark btn-sm bs-dark ms-2 fw-medium text-info pt-2">My Profile</a>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </nav>
         <!-- off-canvas for mobile -->
@@ -81,7 +81,7 @@
                             <li class="nav-item">
                                 <a class="nav-link">Start Selling</a>
                             </li>
-                            <a id="login" href="signup.html" class="btn hvr-bounce-to-top btn-danger btn-sm bs-danger ms-2 fw-medium text-info pt-2">My Profile</a>
+                            <!-- <a id="login" href="signup.html" class="btn hvr-bounce-to-top btn-danger btn-sm bs-danger ms-2 fw-medium text-info pt-2">My Profile</a> -->
                         </ul>
                     </div>
               </div>
@@ -91,7 +91,17 @@
     <!-- main -->
     <main>
         <div class="container">
-            <div class="row mt-5 g-0">
+            <div class="row mt-5 pt-3">
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb ff-main">
+                            <li class="breadcrumb-item"><a href="kopii-shop.html">Shop</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">My Profile</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row g-0">
                 <div class="col-3 ff-main">
                     <div class="user-profile mt-4">
                         <div class="d-flex">
@@ -109,7 +119,7 @@
                           <a class="nav-link active text-warning" aria-current="page" href="#">My Purchases</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">My Profile</a>
+                          <a class="nav-link" href="#">My Info</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">My Addresses</a>
@@ -121,9 +131,9 @@
                 </div>
                 <div class="col">
                     <div class="container mt-4">
-                        <div class="card text-center bg-secondary text-light" style="min-height: 36rem;">
+                        <div class="card text-center bg-secondary text-light" style="min-height: 33rem;">
                             <div class="card-header">
-                                <ul class="nav nav-tabs card-header-tabs">
+                                <ul class="nav nav-tabs card-header-tabs ff-main">
                                     <li class="nav-item">
                                         <a class="nav-link" data-bs-toggle="tab" href="#to-pay">To Pay</a>
                                     </li>
@@ -134,32 +144,56 @@
                                         <a class="nav-link" data-bs-toggle="tab" href="#to-deliver">To Deliver</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#to-ship">To Ship</a>
+                                        <a class="nav-link" data-bs-toggle="tab" href="#completed">Completed</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#to-deliver">To Deliver</a>
+                                        <a class="nav-link" data-bs-toggle="tab" href="#cancelled">Cancelled</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="card-body">
-                                <div class="tab-content">
-                                    <div class="tab-pane fade show active" id="to-pay">
+                                <div class="tab-content ff-main">
+                                    <div class="tab-pane fade" id="to-pay">
                                         <h5 class="card-title">Payment Information</h5>
                                         <p class="card-text">Include details about the payment process here.</p>
                                     </div>
-                                    <div class="tab-pane fade" id="to-ship">
-                                        <h5 class="card-title">Shipping Details</h5>
-                                        <p class="card-text">Include details about the shipping process here.</p>
+                                    <div class="tab-pane fade show active" id="to-ship">
+                                        <div class="card p-0 mt-3 bg-light">
+                                            <div class="card-header">
+                                              Featured
+                                            </div>
+                                            <div class="card-body row d-flex align-items-center">
+                                                <div class="col-6 d-flex align-items-center py-2">
+                                                    <div class="d-flex gap-2">
+                                                        <div><img class="img-fluid" style="background-size: contain; width: 5rem; height: 6rem;"    src="../assets/images/product-detail-1.jpg" alt=""></div>
+                                                        <div>
+                                                            <h5>Elegant Ceramic Cup Set</h5>
+                                                            <p>Indulge in your favorite brew with this elegant...</p>
+                                                        </div>
+                                                    </div>
+                                                 </div>
+                                                <div class="col">₱ 599.99</div>
+                                                <div class="col d-flex">
+                                                    <!-- <div class="border p-2">+</div> -->
+                                                    <div class="border p-2">1</div>
+                                                    <!-- <div class="border p-2">-</div> -->
+                                                </div>
+                                                <div class="col">₱ 599.99</div>
+                                            </div>
+                                            <div class="card-footer ff-main">
+                                                <p>Seller is preparing to ship your parcel</p>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="tab-pane fade" id="to-deliver">
                                         <h5 class="card-title">Delivery Information</h5>
                                         <p class="card-text">Include details about the delivery process here.</p>
                                     </div>
-                                    <div class="tab-pane fade" id="to-ship">
+                                    <div class="tab-pane fade" id="completed">
                                         <h5 class="card-title">Shipping Details</h5>
                                         <p class="card-text">Include details about the shipping process here.</p>
                                     </div>
-                                    <div class="tab-pane fade" id="to-deliver">
+                                    <div class="tab-pane fade" id="cancelled">
                                         <h5 class="card-title">Delivery Information</h5>
                                         <p class="card-text">Include details about the delivery process here.</p>
                                     </div>
