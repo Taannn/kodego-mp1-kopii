@@ -20,6 +20,278 @@
 </head>
 <body>
     <div id="preloader"></div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top d-none d-lg-block" style="z-index: 98;">
+            <div class="container">
+                <a class="navbar-brand hvr-wobble-horizontal" href="#"><img src="../assets/images/kopii-stop-light.png" alt="" width="130"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav nav-underline ff-main fs-6">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Kopii Stop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kopii-shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <button type="button" class="btn hvr-bounce-to-top btn-danger btn-sm bs-danger ms-2 fw-medium text-info pt-2 px-3" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                            <!-- <i class="fa-solid fa-bag-shopping"></i> -->
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="badge bg-primary position-absolute top-0 start-100 translate-middle" style="display: none;">
+                                1
+                            </span>
+                        </button>
+                        <button type="button" class="btn hvr-bounce-to-top btn-danger btn-sm bs-danger fw-medium text-info pt-2" data-bs-toggle="offcanvas" data-bs-target="#profileOffcanvas">
+                            <i class="fa-solid fa-user px-2"></i>
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Offcanvas for Cart -->
+        <div class="offcanvas offcanvas-end bg-info text-danger" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+            <!-- Content for Cart Offcanvas -->
+            <div class="offcanvas-header ff-main">
+                <h5 class="offcanvas-title" id="cartOffcanvasLabel">Basket</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="card p-0 mt-3 bg-light">
+                    <div class="card-header ff-main">
+                      BrewMunch Delights
+                    </div>
+                    <div class="card-body row d-flex align-items-center ff-main">
+                        <div class="col d-flex align-items-center py-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                <label class="form-check-label" for="flexCheckDefault"></label>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <div><img class="img-fluid" style="background-size: contain; width: 5rem; height: 6rem;"    src="../assets/images/product-detail-1.jpg" alt=""></div>
+                                <div>
+                                    <h5 class="card-title">Caramel Macchiato Morsels</h5>
+                                </div>
+                            </div>
+                         </div>
+                        <div class="col d-flex">
+                            <div class="border p-2">+</div>
+                            <div class="border p-2">1</div>
+                            <div class="border p-2">-</div>
+                        </div>
+                        <div class="col">₱ 150.00</div>
+                    </div>
+                    <div class="card-footer text-body-secondary d-flex justify-content-between ff-main">
+                        <p>Total</p>
+                        <p>150.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-2 m-2 bg-info">
+                <div class="col d-flex justify-content-between ff-main align-items-center">
+                    <h1>Total</h1>
+                    <p>₱ 150.00</p>
+                </div>
+                <a href="stop-order-confirmation.html" class="btn btn-secondary text-decoration-none w-100 text-light ff-main">Review Order<a>
+            </div>
+        </div>
+
+        <!-- Offcanvas for Profile -->
+        <div class="offcanvas offcanvas-end bg-info text-danger" tabindex="-1" id="profileOffcanvas" aria-labelledby="profileOffcanvasLabel">
+            <!-- Content for Profile Offcanvas -->
+            <div class="offcanvas-header">
+                <!-- <h5 class="offcanvas-title" id="cartOffcanvasLabel">Shopping Cart</h5> -->
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ff-main">
+                <p>On-going Order</p>
+                <p>Logout</p>
+            </div>
+        </div>
+        <!-- offcanvas end -->
+    </header>
+    <!-- main -->
+    <main>
+        <div class="container">
+            <!-- <div class="row mt-5 pt-4 mb-4 ff-main">
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a href="stop-category-logged-ver.html">Snacks</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">BrewMunch Delights</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div> -->
+        </div>
+        <!-- shop details -->
+        <section class="product-details border-bottom border-2 mt-5 pt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col ff-main">
+                        <h1 class="display-1 text-primary">Checkout</h1>
+                        <h1 class="display-5">Caramel Macchiato Morsels</h1>
+                        <p class="lead ms-2">BrewMunch Delights</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="card mt-5">
+                <div class="card-header ff-main text-primary ff-main">
+                    <i class="fa-solid fa-location-dot me-2"></i><span class="card-title">Delivery To</span>
+                </div>
+                <div class="card-body ff-main">
+                  <p class="card-text fw-medium">Delivery arrival time</p>
+                  <p class="card-text">25 mins ( 1 km away )</p>
+                </div>
+            </div>
+        </div>
+        <!-- delivery address -->
+        <div class="container mt-4">
+            <div class="card text-dark">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3 ff-main">
+                            <label for="addressInput" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="addressInput" placeholder="e.g. Elmo St. Papaya Subd">
+                        </div>
+
+                        <div class="mb-3 ff-main">
+                            <label for="customerNotesTextarea" class="form-label">Customer Notes</label>
+                            <textarea class="form-control" id="customerNotesTextarea" rows="4" placeholder="e.g. Extra details and request"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- order summary -->
+        <div class="container">
+            <div class="card mt-4">
+                <div class="card-header ff-main text-primary ff-main">
+                    <i class="fa-solid fa-location-dot me-2"></i><span class="card-title">Delivery To</span>
+                </div>
+                <div class="card-body pb-0 ff-main d-flex justify-content-between">
+                  <p class="card-text fw-medium">Subtotal:</p>
+                  <p class="card-text">₱ 150.00</p>
+                </div>
+                <div class="card-body pt-0 ff-main d-flex justify-content-between">
+                  <p class="card-text fw-medium">Delivery Fee</p>
+                  <p class="card-text">₱ 55.00</p>
+                </div>
+            </div>
+        </div>
+        <!-- oayment method -->
+        <div class="container mt-4">
+            <div class="card text-dark">
+                <div class="card-header">
+                    <h5 class="card-title ff-main">Payment Details</h5>
+                </div>
+                <div class="card-body ff-main">
+                    <p class="card-text">Payment Method</p>
+                    <div class="dropdown w-100">
+                        <button class="btn btn-outline-info text-dark dropdown-toggle w-100 text-start" type="button" id="paymentMethodDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            GCash
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="paymentMethodDropdown">
+                            <li><a class="dropdown-item" href="#">GCash</a></li>
+                            <li><a class="dropdown-item" href="#">Cash on Delivery</a></li>
+                            <li><a class="dropdown-item" href="#">Metrobank</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- promo code -->
+        <div class="container mt-4 pb-5">
+            <div class="card text-dark">
+                <div class="card-header">
+                    <h5 class="card-title ff-main">Promo Code</h5>
+                </div>
+                <div class="card-body ff-main">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter promo code" aria-label="Enter promo code" aria-describedby="applyButton">
+                        <button class="btn btn-secondary text-light" type="button" id="applyButton">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- totla payment -->
+        <section class="mt-4 bg-sage">
+            <div class="container">
+                <div class=" pt-3 pb-5 d-flex align-items-center justify-content-between">
+                    <div>
+                        <p class="h1 me-auto ff-main text-dark">Total: ₱ 205.00</p>
+                    </div>
+                    <div class="ff-main">
+                        <a href="kopii-stop-aftermath.html" class="btn btn-secondary btn-lg text-light px-3 py-1">Place Order</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer id="contact_us" class="text-center text-lg-start text-info bg-primary ff-main">
+        <div class="container">
+            <div class="container p-4 pb-0">
+                <section class="">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Kopii</h6>
+                            <p>Kopii, a visionary online platform that transcends the conventional coffee shopping experience. Meticulously crafted for coffee enthusiasts, it goes beyond mere commerce, establishing itself as a haven for those who savor every aspect of the coffee journey. </p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Navigation</h6>
+                            <p><a class="text-white text-decoration-none" href="#home">Home</a></p>
+                            <p><a class="text-white text-decoration-none" href="#about_us">About Us</a></p>
+                            <p><a class="text-white text-decoration-none" href="#kopii_stop">Kopii Stop</a></p>
+                            <p><a class="text-white text-decoration-none" href="#reviews">Reviews</a></p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Shop Now</h6>
+                            <p><a class="text-white text-decoration-none" href="pages/kopii-shop.html">Kopii Shop</a></p>
+                            <p><a class="text-white text-decoration-none" href="pages/kopii-stop.html">Kopii Stop</a></p>
+                            <p><a class="text-white text-decoration-none" href="pages/contact-us.html">Talk to Us</a></p>
+                            <p><a class="text-white text-decoration-none">Help</a></p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                            <p><i class="fas fa-home mr-3"></i> Sabaody, <del>3D</del>2Y</p>
+                            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 63 234 567 8901</p>
+                            <p><i class="fas fa-print mr-3"></i> + 63 234 567 8901</p>
+                        </div>
+                    </div>
+                </section>
+                <hr class="my-3">
+                <section class="p-3 pt-0">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-7 col-lg-8 text-center text-md-start">
+                            <div class="p-3">
+                                &copy; 2020 Copyright:
+                                <a class="text-white text-decoration-none" href="https://mdbootstrap.com/">Kopii</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-google"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
 
     <!-- preloader script -->
     <script>
