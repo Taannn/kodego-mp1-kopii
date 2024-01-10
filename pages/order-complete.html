@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/cup.png" type="image/png">
-    <title>Order Complete</title>
+    <title>Order Placed</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/hover.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,11 +20,258 @@
 </head>
 <body>
     <div id="preloader"></div>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-block bg-danger" style="z-index: 98;">
+            <div class="container">
+                <a class="navbar-brand hvr-wobble-horizontal" href="#"><img src="assets/images/kopii-light.png" alt="" width="70"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+                    <ul class="navbar-nav nav-underline ff-main fs-6">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/kopii-stop.html">Kopii Stop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact_us">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Start Selling</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav nav-underline ff-main fs-6">
+                        <a id="login" href="profile.html" class="btn hvr-bounce-to-top btn-dark btn-sm bs-dark ms-2 fw-medium text-info pt-2">My Profile</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- off-canvas for mobile -->
+        <nav class="navbar navbar-dark bg-danger fixed-top d-block d-lg-none">
+            <div class="container-fluid">
+                <a class="navbar-brand hvr-wobble-horizontal" href="#"><img src="assets/images/kopii-light.png" alt="" width="70"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dashboard</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav nav-underline ff-main fs-6 justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/kopii-shop.html">Kopii Stop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contact-us.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Start Selling</a>
+                            </li>
+                            <a id="login" href="profile.html" class="btn hvr-bounce-to-top btn-danger btn-sm bs-danger ms-2 fw-medium text-info pt-2">My Profile</a>
+                        </ul>
+                    </div>
+              </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger mt-5 pt-lg-5 py-3 ff-main">
+            <div class="container">
+                <a class="navbar-brand hvr-wobble-vertical d-none d-lg-block" href="#"><img src="../assets/images/kopii-light.png" width="110" alt=""></a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-lg-auto">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search for products" aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit"><i class="fa-solid fa-magnifying-glass text-sage py-2 px-3"></i></button>
+                    </form>
 
+                </div>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping ms-1 ms-lg-3 text-info"></i></a>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
     <main>
-        <div class="container mt-4"></div>
+        <section class="product-details border-bottom border-2 mt-5 pt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col ff-main">
+                        <h1 class="display-1 text-primary text-success"><i class="fa-regular fa-circle-check me-2"></i>Order Placed</h1>
+                        <h1 class="display-6">Greetings from Kopii!</h1>
+                        <p class="lead ms-2">Your Order has been successfully placed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="border-bottom border-2">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col">
+                        <p class="h1 ff-main">Discover More</p>
+                    </div>
+                </div>
+                <!-- mobile-card-start -->
+                <div class="row mt-3 mb-5 gy-3">
+                    <div class="col-6 col-md-3">
+                        <a href="stop.detail.html" class="text-decoration-none">
+                            <div class="card">
+                                <div class="category">
+                                    <img src="../assets/images/milktea-2.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="card-body ff-main">
+                                    <div class="card-title text-primary h3">BrewMunch Delights</div>
+                                    <div class="card-subtitle">Gourmet Coffee Snacks</div>
+                                    <div class="card-text ff-main d-flex gap-3">
+                                        <div class="rating d-flex">
+                                            <i class="fa-solid fa-star pt-1 me-1" style="color: yellow; font-size: 1rem;"></i>
+                                            <p>4.8</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card">
+                                <div class="category">
+                                    <img src="../assets/images/snacks.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="card-body ff-main">
+                                    <div class="card-title text-primary h3">Frothy Big Bites</div>
+                                    <div class="card-subtitle">Artisan Coffee Treats</div>
+                                    <div class="card-text ff-main d-flex gap-3">
+                                        <div class="rating d-flex">
+                                            <i class="fa-solid fa-star pt-1 me-1" style="color: yellow; font-size: 1rem;"></i>
+                                            <p>4.8</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card">
+                                <div class="category">
+                                    <img src="../assets/images/coffee-cat.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="card-body ff-main">
+                                    <div class="card-title text-primary h3">BeanTreat Haven</div>
+                                    <div class="card-subtitle">Coffee Nut Mixes</div>
+                                    <div class="card-text ff-main d-flex gap-3">
+                                        <div class="rating d-flex">
+                                            <i class="fa-solid fa-star pt-1 me-1" style="color: yellow; font-size: 1rem;"></i>
+                                            <p>4.8</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card">
+                                <div class="category">
+                                    <img src="../assets/images/tea.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="card-body ff-main">
+                                    <div class="card-title text-primary h3">Sip&Snack Noop</div>
+                                    <div class="card-subtitle">Energy Bars</div>
+                                    <div class="card-text ff-main d-flex gap-3">
+                                        <div class="rating d-flex">
+                                            <i class="fa-solid fa-star pt-1 me-1" style="color: yellow; font-size: 1rem;"></i>
+                                            <p>4.8</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- mobile-card-end -->
+            </div>
+        </section>
+        <div class="container ff-main mt-5 d-flex gap-3 mb-5">
+            <a href="#" class="btn btn-success btn-lg text-light text-decoration-none">Continue Exploring</a>
+            <a href="profile.html" class="btn btn-success btn-lg text-light text-decoration-none">Track your Order</a>
+            <a href="#" class="btn btn-success btn-lg text-light text-decoration-none">More of Kopii</a>
+        </div>
     </main>
-
+    <!-- footer -->
+    <footer id="contact_us" class="text-center text-lg-start text-info bg-primary ff-main">
+        <div class="container">
+            <div class="container p-4 pb-0">
+                <section class="">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Kopii</h6>
+                            <p>Kopii, a visionary online platform that transcends the conventional coffee shopping experience. Meticulously crafted for coffee enthusiasts, it goes beyond mere commerce, establishing itself as a haven for those who savor every aspect of the coffee journey. </p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Navigation</h6>
+                            <p><a class="text-white text-decoration-none" href="#home">Home</a></p>
+                            <p><a class="text-white text-decoration-none" href="#about_us">About Us</a></p>
+                            <p><a class="text-white text-decoration-none" href="#kopii_stop">Kopii Stop</a></p>
+                            <p><a class="text-white text-decoration-none" href="#reviews">Reviews</a></p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Shop Now</h6>
+                            <p><a class="text-white text-decoration-none" href="pages/kopii-shop.html">Kopii Shop</a></p>
+                            <p><a class="text-white text-decoration-none" href="pages/kopii-stop.html">Kopii Stop</a></p>
+                            <p><a class="text-white text-decoration-none" href="pages/contact-us.html">Talk to Us</a></p>
+                            <p><a class="text-white text-decoration-none">Help</a></p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                            <p><i class="fas fa-home mr-3"></i> Sabaody, <del>3D</del>2Y</p>
+                            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 63 234 567 8901</p>
+                            <p><i class="fas fa-print mr-3"></i> + 63 234 567 8901</p>
+                        </div>
+                    </div>
+                </section>
+                <hr class="my-3">
+                <section class="p-3 pt-0">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-7 col-lg-8 text-center text-md-start">
+                            <div class="p-3">
+                                &copy; 2020 Copyright:
+                                <a class="text-white text-decoration-none" href="https://mdbootstrap.com/">Kopii</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-google"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
 
     <!-- preloader script -->
     <script>
