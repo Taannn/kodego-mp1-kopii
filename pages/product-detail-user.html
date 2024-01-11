@@ -182,7 +182,7 @@
                                 <button class="shadow btn custom-btn add-to-cart-btn bs-light" id="liveToastBtn">Add to cart</button>
                             </div>
 
-                            <div class="block quantity">
+                            <div class="block quantity d-none d-lg-block">
                                 <input type="number" class="form-control" id="cart_quantity" value="1" min="0" max="5" placeholder="Enter email" name="cart_quantity">
                             </div>
                         </div>
@@ -221,19 +221,16 @@
         <div class="container similar-products my-4 ff-main">
             <hr>
             <p class="display-5">Similar Products</p>
-            <div class="row justify-content-center gy-3">
+            <!-- mobile-card-start -->
+            <div class="row mt-3 mx-2 mg-0 mb-lg-5 gy-3">
                 <div class="col-6 col-md-3">
-                    <a href="#" class="text-decoration-none">
-                        <div class="card similar-product">
-                            <div class="category d-none d-lg-block">
-                                <img src="../assets/images/similar-1.jpg" class="img-fluid" alt="">
+                    <a href="stop.detail.html" class="text-decoration-none">
+                        <div class="card">
+                            <div class="category">
+                                <img src="../assets/images/milktea-2.jpg" class="img-fluid" alt="">
                             </div>
-                            <div class="category d-block d-lg-none">
-                                <img src="../assets/images/similar-v1.jpg" class="img-fluid" style="object-fit: contain;" alt="">
-                            </div>
-                            <div class="card-body ff-main">
-                                <div class="card-title text-primary h3 title">Frothy Big Bites</div>
-                                <div class="card-subtitle">Artisan Coffee Treats</div>
+                            <div class="card-body ff-main p-1">
+                                <div class="card-title text-primary h3">BrewMunch Delights</div>
                                 <div class="card-text ff-main d-flex gap-3">
                                     <div class="rating d-flex">
                                         <i class="fa-solid fa-star pt-1 me-1" style="color: yellow; font-size: 1rem;"></i>
@@ -246,16 +243,12 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <a href="#" class="text-decoration-none">
-                        <div class="card similar-product">
-                            <div class="category d-none d-lg-block">
-                                <img src="../assets/images/similar-2.jpg" class="img-fluid" alt="">
+                        <div class="card">
+                            <div class="category">
+                                <img src="../assets/images/snacks.jpg" class="img-fluid" alt="">
                             </div>
-                            <div class="category d-block d-lg-none">
-                                <img src="../assets/images/similar-v2.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="card-body ff-main">
-                                <div class="card-title text-primary h3 title">Frothy Big Bites</div>
-                                <div class="card-subtitle">Artisan Coffee Treats</div>
+                            <div class="card-body ff-main p-1">
+                                <div class="card-title text-primary h3">Frothy Big Bites</div>
                                 <div class="card-text ff-main d-flex gap-3">
                                     <div class="rating d-flex">
                                         <i class="fa-solid fa-star pt-1 me-1" style="color: yellow; font-size: 1rem;"></i>
@@ -268,16 +261,12 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <a href="#" class="text-decoration-none">
-                        <div class="card similar-product">
-                            <div class="category d-none d-lg-block">
-                                <img src="../assets/images/similar-3.jpg" class="img-fluid" alt="">
+                        <div class="card">
+                            <div class="category">
+                                <img src="../assets/images/coffee-cat.jpg" class="img-fluid" alt="">
                             </div>
-                            <div class="category d-block d-lg-none">
-                                <img src="../assets/images/similar-v3.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="card-body ff-main">
-                                <div class="card-title text-primary h3 title">Frothy Big Bites</div>
-                                <div class="card-subtitle">Artisan Coffee Treats</div>
+                            <div class="card-body ff-main p-1">
+                                <div class="card-title text-primary h3">BeanTreat Haven</div>
                                 <div class="card-text ff-main d-flex gap-3">
                                     <div class="rating d-flex">
                                         <i class="fa-solid fa-star pt-1 me-1" style="color: yellow; font-size: 1rem;"></i>
@@ -290,16 +279,12 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <a href="#" class="text-decoration-none">
-                        <div class="card similar-product">
-                            <div class="category d-none d-lg-block">
-                                <img src="../assets/images/portrait-2.jpg" class="img-fluid" alt="">
+                        <div class="card">
+                            <div class="category">
+                                <img src="../assets/images/tea.jpg" class="img-fluid" alt="">
                             </div>
-                            <div class="category d-block d-lg-none">
-                                <img src="../assets/images/portrait-v2.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="card-body ff-main">
-                                <div class="card-title text-primary h3 title">Frothy Big Bites</div>
-                                <div class="card-subtitle">Artisan Coffee Treats</div>
+                            <div class="card-body ff-main p-1">
+                                <div class="card-title text-primary h3">Sip&Snack Noop</div>
                                 <div class="card-text ff-main d-flex gap-3">
                                     <div class="rating d-flex">
                                         <i class="fa-solid fa-star pt-1 me-1" style="color: yellow; font-size: 1rem;"></i>
@@ -311,7 +296,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+            <!-- mobile-card-end -->
         </div>
 
     </main>
@@ -329,17 +314,17 @@
                         <hr class="w-100 clearfix d-md-none" />
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                             <h6 class="text-uppercase mb-4 font-weight-bold">Navigation</h6>
-                            <p><a class="text-white text-decoration-none" href="#home">Home</a></p>
-                            <p><a class="text-white text-decoration-none" href="#about_us">About Us</a></p>
-                            <p><a class="text-white text-decoration-none" href="#kopii_stop">Kopii Stop</a></p>
-                            <p><a class="text-white text-decoration-none" href="#reviews">Reviews</a></p>
+                            <p><a class="text-white text-decoration-none" href="../index.html#home">Home</a></p>
+                            <p><a class="text-white text-decoration-none" href="../index.html#about_us">About Us</a></p>
+                            <p><a class="text-white text-decoration-none" href="../index.html#kopii_stop">Kopii Stop</a></p>
+                            <p><a class="text-white text-decoration-none" href="../index.html#reviews">Reviews</a></p>
                         </div>
                         <hr class="w-100 clearfix d-md-none" />
                         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                             <h6 class="text-uppercase mb-4 font-weight-bold">Shop Now</h6>
-                            <p><a class="text-white text-decoration-none" href="pages/kopii-shop.html">Kopii Shop</a></p>
-                            <p><a class="text-white text-decoration-none" href="pages/kopii-stop.html">Kopii Stop</a></p>
-                            <p><a class="text-white text-decoration-none" href="pages/contact-us.html">Talk to Us</a></p>
+                            <p><a class="text-white text-decoration-none" href="kopii-shop.html">Kopii Shop</a></p>
+                            <p><a class="text-white text-decoration-none" href="kopii-stop.html">Kopii Stop</a></p>
+                            <p><a class="text-white text-decoration-none" href="contact-us.html">Talk to Us</a></p>
                             <p><a class="text-white text-decoration-none" href="#">Help</a></p>
                         </div>
                         <hr class="w-100 clearfix d-md-none" />
