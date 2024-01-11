@@ -40,7 +40,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav nav-underline ff-main fs-6">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Kopii Stop</a>
+                            <a class="nav-link" aria-current="page" href="kopii-stop-logged-ver.html">Kopii Stop</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="kopii-shop.html">Shop</a>
@@ -49,7 +49,6 @@
                             <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <button type="button" class="btn hvr-bounce-to-top btn-danger btn-sm bs-danger ms-2 fw-medium text-info pt-2 px-3" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
-                            <!-- <i class="fa-solid fa-bag-shopping"></i> -->
                             <i class="fa-solid fa-bag-shopping"></i>
                             <span class="badge bg-primary position-absolute top-0 start-100 translate-middle" style="display: none;">
                                 1
@@ -131,7 +130,7 @@
                 <div class="col">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a href="kopii-stop-logged-ver.html">Home</a></li>
                           <li class="breadcrumb-item"><a href="stop-category-logged-ver.html">Snacks</a></li>
                           <li class="breadcrumb-item active" aria-current="page">BrewMunch Delights</li>
                         </ol>
@@ -173,19 +172,21 @@
             <!-- actual products -->
             <div class="row mt-3 mb-5">
                 <div class="col">
-                    <div class="card">
-                        <div class="category">
-                            <img src="../assets/images/milktea-2.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="card-body ff-main">
-                            <div class="card-title text-primary h3">Caramel Macchiato Morsels</div>
-                            <div class="card-text ff-main d-flex gap-3">Indulge in the rich flavors of caramel and espresso in these bite-sized delights.</div>
-                            <div class="pricing d-flex w-100 ff-main gap-1 align-items-center justify-content-between">
-                                <p class="mt-2 text-bold fs-5 text-dark">₱ 150.00</p>
-                                <button class="btn btn-success text-light px-3 pt-1 pb-2 add-to-cart-btn" id="liveToastBtn">+</button>
+                    <a href="#" class="text-decoration-none">
+                        <div class="card">
+                            <div class="category">
+                                <img src="../assets/images/milktea-2.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body ff-main">
+                                <div class="card-title text-primary h3">Caramel Macchiato Morsels</div>
+                                <div class="card-text ff-main d-flex gap-3">Indulge in the rich flavors of caramel and espresso in these bite-sized delights.</div>
+                                <div class="pricing d-flex w-100 ff-main gap-1 align-items-center justify-content-between">
+                                    <p class="mt-2 text-bold fs-5 text-dark">₱ 150.00</p>
+                                    <button class="btn btn-success text-light px-3 pt-1 pb-2 add-to-cart-btn" id="liveToastBtn">+</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col">
                     <a href="#" class="text-decoration-none">
@@ -265,7 +266,7 @@
                             <p><a class="text-white text-decoration-none" href="pages/kopii-shop.html">Kopii Shop</a></p>
                             <p><a class="text-white text-decoration-none" href="pages/kopii-stop.html">Kopii Stop</a></p>
                             <p><a class="text-white text-decoration-none" href="pages/contact-us.html">Talk to Us</a></p>
-                            <p><a class="text-white text-decoration-none">Help</a></p>
+                            <p><a class="text-white text-decoration-none" href="#">Help</a></p>
                         </div>
                         <hr class="w-100 clearfix d-md-none" />
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -283,14 +284,14 @@
                         <div class="col-md-7 col-lg-8 text-center text-md-start">
                             <div class="p-3">
                                 &copy; 2020 Copyright:
-                                <a class="text-white text-decoration-none" href="https://mdbootstrap.com/">Kopii</a>
+                                <a class="text-white text-decoration-none" href="#">Kopii</a>
                             </div>
                         </div>
                         <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-google"></i></a>
-                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" href="#" role="button"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" href="#" role="button"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" href="#" role="button"><i class="fab fa-google"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" href="#" role="button"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </section>
@@ -321,7 +322,6 @@
         window.addEventListener("load", function() {
             loader.style.display = "none";
         })
-
     </script>
 </body>
 </html>

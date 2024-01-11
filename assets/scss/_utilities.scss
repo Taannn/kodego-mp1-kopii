@@ -31,7 +31,6 @@
     box-shadow: inset 6px 6px 12px #290e10,
                 inset -6px -6px 12px #3c1418;
 }
-
 // spacing
 .py-6 {
     padding: 6rem 0 6rem;
@@ -69,4 +68,19 @@
     background-color: $sage;
 }
 
-// custom sizes
+// custom styles
+.bg-opaque {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
+.op-mid {
+    opacity: 0.5;
+}
+.z-higher {
+    z-index: 120;
+}
+.z-lower {
+    z-index: 86;
+}
+.z-much-lower {
+    z-index: 32;
+}

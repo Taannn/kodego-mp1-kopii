@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- if someone manages to access this repo in the near future, some links might confused you because im following a script in order to represent this mp1 without dynamic features, im aware of js and i only have a baasic understanding of it at the moment, on our mp2 and capstone, lots of complicated and difficult stuff will be added in the mix besides html and css, i wish myself goodluck hoping that my future self will end up reading this while at work waiting for my code to compile -->
+    <!-- if someone manages to access this repo in the near future, some links might confused you because im following a script in order to present this mp1 without dynamic features, im aware of js and i only have a basic understanding of it at the moment, on our mp2 and capstone, lots of complicated and difficult stuff will be added in the mix besides html and css, i wish myself goodluck hoping that my future self will end up reading this while at work waiting for my code to compile -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/cup.png" type="image/png">
@@ -37,7 +37,7 @@
     </div>
     <div id="preloader"></div>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-block" style="z-index: 98; background-color: rgba(0, 0, 0, 0.5);">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-none d-lg-block z-lower bg-opaque">
             <div class="container">
                 <a class="navbar-brand hvr-wobble-horizontal" href="#"><img src="assets/images/kopii-light.png" alt="" width="70"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@
                             <a class="nav-link" href="#about_us">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact_us">Contact Us</a>
+                            <a class="nav-link" href="pages/contact-us.html">Contact Us</a>
                         </li>
                         <a id="login" href="pages/signup.html" class="btn hvr-bounce-to-top btn-danger btn-sm bs-danger ms-2 fw-medium text-info pt-2">Login/Signup</a>
                     </ul>
@@ -92,7 +92,7 @@
                                 <a class="nav-link" href="#about_us">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact_us">Contact Us</a>
+                                <a class="nav-link" href="pages/contact-us.html">Contact Us</a>
                             </li>
                             <a id="login" href="pages/signup.html" class="btn hvr-bounce-to-top btn-danger btn-sm bs-danger ms-2 fw-medium text-info pt-2">Login/Signup</a>
                         </ul>
@@ -109,7 +109,7 @@
                 <div class="row">
                     <div class="col-lg-6 text-light">
                         <h1 class="display-1 ls-1">Kopii, Your Gateway to Flavorful Delights</h1>
-                        <p class="lead ff-lead ls-1 lh-1 text-light">Embark on a unique coffee adventure with Kopii. Explore rare blends and timeless classics, curated to elevate your coffee experience. Start your journey now – shop our exclusive selection and transcend ordinary coffee encounters.</p>
+                        <p class="lead ff-lead ls-1 lh-1 text-light">Embark on a unique coffee adventure with Kopii. Explore rare blends and timeless classics, curated to elevate your coffee experience. Start your journey now &ndash; shop our exclusive selection and transcend ordinary coffee encounters.</p>
                         <a href="pages/kopii-shop.html" class="btn btn-primary btn-lg bs-primary text-info hvr-glow text-decoration-none">Shop Now<i class="fa-solid fa-chevron-right ms-2"></i></a>
                     </div>
                 </div>
@@ -361,7 +361,7 @@
                             <p><a class="text-white text-decoration-none" href="pages/kopii-shop.html">Kopii Shop</a></p>
                             <p><a class="text-white text-decoration-none" href="pages/kopii-stop.html">Kopii Stop</a></p>
                             <p><a class="text-white text-decoration-none" href="pages/contact-us.html">Talk to Us</a></p>
-                            <p><a class="text-white text-decoration-none">Help</a></p>
+                            <p><a class="text-white text-decoration-none" href="#">Help</a></p>
                         </div>
                         <hr class="w-100 clearfix d-md-none" />
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -379,14 +379,14 @@
                         <div class="col-md-7 col-lg-8 text-center text-md-start">
                             <div class="p-3">
                                 &copy; 2020 Copyright:
-                                <a class="text-white text-decoration-none" href="https://mdbootstrap.com/">Kopii</a>
+                                <a class="text-white text-decoration-none" href="#">Kopii</a>
                             </div>
                         </div>
                         <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-google"></i></a>
-                            <a class="btn btn-outline-info btn-floating m-1 text-danger" role="button"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" href="#" role="button"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" href="#" role="button"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" href="#" role="button"><i class="fab fa-google"></i></a>
+                            <a class="btn btn-outline-info btn-floating m-1 text-danger" href="#" role="button"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </section>
@@ -399,7 +399,6 @@
         window.addEventListener("load", function() {
             loader.style.display = "none";
         })
-
     </script>
 </body>
 </html>

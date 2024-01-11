@@ -96,6 +96,26 @@
   background-color: #C7C7A6;
 }
 
+.bg-opaque {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.op-mid {
+  opacity: 0.5;
+}
+
+.z-higher {
+  z-index: 120;
+}
+
+.z-lower {
+  z-index: 86;
+}
+
+.z-much-lower {
+  z-index: 32;
+}
+
 .hero {
   background-image: url(../images/bg-lg-7.jpg);
   background-size: cover;
